@@ -557,6 +557,16 @@ blockquote cite {
   font-style: normal;
 }
 
+
+
+#stamped-reviews-widget[data-widget-type="full-page"] 
+.stamped-reviews-title {font-size: 1.3em !important;} 
+#stamped-reviews-widget[data-widget-type="full-page"] 
+.stamped-style-color-text {font-size: 15px !Important;}
+
+
+
+
 /* ==========================================================================
   12.cta section
    ========================================================================== */

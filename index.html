@@ -426,22 +426,21 @@
           </header>
           <form class="cta-form" action="php/contact.php" method="post">
             <div class="form-group">
-              <input  type="text" name="name" class="contact-name form-control input-lg" placeholder="Name *" id="contact-name"  value="<?php echo htmlspecialchars($_POST['name']); ?>">
+              <input  type="text" name="name" class="contact-name form-control input-lg" placeholder="Name *" id="contact-name"  >
 			<?php echo "<p class='text-danger'>$errName</p>";?>
             </div>
             <div class="form-group">
-              <input  type="text"  name="email" class="contact-email form-control input-lg" placeholder="Email address *" id="contact-email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-			<?php echo "<p class='text-danger'>$errEmail</p>";?>
+              <input  type="text"  name="email" class="contact-email form-control input-lg" placeholder="Email address *" id="contact-email" >
+			
             </div>
             <div class="form-group">
               <textarea name="message" class="contact-message form-control input-lg" rows="4" placeholder="Message *" id="contact-message"></textarea>
             </div>
             <div class="form-group">
               <input type="text" name="human" placeholder="Antispam question: 2 + 3 = ?" class="contact-antispam form-control input-lg" id="contact-antispam">
-		    <?php echo "<p class='text-danger'>$errHuman</p>";?>
+		    
             </div>
-            <button type="submit" class="btn">SEND MESSAGE</button> <?php echo htmlspecialchars($_POST['message']);?></textarea>
-			<?php echo $result; ?>
+            <button type="submit" class="btn">SEND MESSAGE</button>
           </form>
 
         </div>
